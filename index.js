@@ -32,32 +32,27 @@ switch (action) {
         answer = 0;
         for (let i = 0; i < array.length; i++) {
             answer += parseFloat(array[i], 10);
-        // console.log(array)
         }
         break;
     
     case '-':
-        answer = 0;
-        for (let i = 0; i < array.length; i++) {
+        answer = array[0];
+        for (let i = 1; i < array.length; i++) {
             answer -= parseFloat(array[i], 10);
-            console.log(array)
         }
         break;
 
     case '*':
-        answer = 0;
+        answer = 1;
         for (let i = 0; i < array.length; i++) {
             answer *= parseFloat(array[i], 10);
-            console.log(array)
         }
         break;
     
     case '/':
-        answer = 0;
-        for (let i = 0; i < array.length; i++) {
+        answer = array[0];
+        for (let i = 1; i < array.length; i++) {
             answer /= parseFloat(array[i],10);
-            console.log(array)
-            console.log(answer)
         }
         break;
 
